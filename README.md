@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is an attempt to create an example bootstrap for modular web application development.  There have been a number
+This is an attempt to create an example boilerplate for modular web application development.  There have been a number
 of these created by various developers, but the intent of this one is to focus specifically on the structure of the 
 code necessary to create a consumable AMD-based library, rather than to provide all of the tools that are normally
 used in a new web application (build tools, test framework, etc).
