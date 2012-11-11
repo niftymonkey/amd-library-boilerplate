@@ -7,14 +7,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script type="text/javascript" data-main="js/essence" src="js/libs/require.js"></script>
-        <script type="text/javascript" src="js/libs/jquery.js"></script>
     </head>
     <body>
-
+        
+        <h1>Essence Test</h1>
+        
         <script type="text/javascript">
-            $(document).ready(function () {
-                require(["essence"], function(Essence) {
-                    $("body").append($("<div></div>").html(Essence.getVersionInfo()));
+            require(["essence"], function (Essence) {
+                // log to console that we've successfully loaded library dependencies
+                // and built up our library object 
+                console.log(Essence.getVersionInfo() + " loaded.");
+
+                // get the jquery dependency from the lib
+                var $ = Essence.getLib("jquery");
+
+                // log some info about the jquery lib we got
+                console.log("jQuery " + $().jquery + " retrieved.");
+
+                // do soemthing with the jquery object to prove it works.
+                $("body").css({
+                    'font-family': "Courier New",
+                    'background-color': '#CCCCCC'
                 });
             });
         </script>

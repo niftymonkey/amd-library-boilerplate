@@ -21,7 +21,7 @@ define(["jquery"], function ($) {
     return {
         // expose our prop method (yay revealing module pattern)
         prop: prop,
-        // expose an extend function (which in this case is just jQuery's
+        // expose an extend function (which in this case is just jQuery's extend function)
         extend: $.extend
     };
 
