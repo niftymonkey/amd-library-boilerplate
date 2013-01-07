@@ -15,9 +15,9 @@ The goals of this experiment is to show how to do the following:
 
 In the process of trying to build a modular and reusable component library, I understandably came to the conclusion 
 that I would want to use an [AMD][2] script loader.  I chose [RequireJS][1] to handle that.  However, I quickly 
-found myself fighting with understanding how to properly and efficiently meet the goals state above in the goals 
-section. This made me feel like it was necessary to create the proper boilerplate so that I can separate the concerns
-of the library from the concerns of the library code structure.
+found myself fighting with understanding how to properly and efficiently meet the goals stated above in the goals 
+section. This made me feel like it was necessary to create the proper boilerplate so that I can concentrate on library
+functionality, rather than library code structure.
 
 As a result, I have created this example project as a reference for myself for how to accomplish this. 
 
