@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>amd-library-boilerplate by niftymonkey</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">amd-library-boilerplate</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/niftymonkey/amd-library-boilerplate/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/niftymonkey/amd-library-boilerplate/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/niftymonkey/amd-library-boilerplate">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/niftymonkey">niftymonkey</a></p>
+
+
+      </header>
+      <section>
+        <h2>Synopsis</h2>
+
+<p>This is an attempt to create an example boilerplate for modular web application development.  There have been a number
+of these created by various developers, but the intent of this one is to focus specifically on the structure of the 
+code necessary to create a consumable AMD-based library, rather than to provide all of the tools that are normally
+used in a new web application (build tools, test framework, etc).</p>
+
+<h2>Goals</h2>
+
+<p>The goals of this experiment is to show how to do the following:</p>
+
+<ul>
+<li>Build a core javascript library that uses <a href="http://requirejs.org/">RequireJS</a> for its dependency management</li>
+<li>Ensure that this library is also AMD-compliant (meaning it is consumable by other AMD-based libraries).</li>
+<li>Ensure that none of your module dependencies leak out into the global namespace.</li>
+</ul><h2>Motivation</h2>
+
+<p>In the process of trying to build a modular and reusable component library, I understandably came to the conclusion 
+that I would want to use an <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">AMD</a> script loader.  I chose <a href="http://requirejs.org/">RequireJS</a> to handle that.  However, I quickly 
+found myself fighting with understanding how to properly and efficiently meet the goals stated above in the goals 
+section. This made me feel like it was necessary to create the proper boilerplate so that I can concentrate on library
+functionality, rather than library code structure.</p>
+
+<p>As a result, I have created this example project as a reference for myself for how to accomplish this. </p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
